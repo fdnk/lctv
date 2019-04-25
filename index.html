@@ -25,11 +25,24 @@
 	
 	
 	<div class="row">
-		<div class="col-md-8">
-			 <span class="badge badge-default"><iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:450px;height:210px;"src="https://www.clocklink.com/html5embed.php?clock=048&timezone=GMT-0300&color=orange&size=450&Title=&Message=&Target=&From=2019,1,1,0,0,0&Color=orange"></iframe></span>
-		</div>
 		<div class="col-md-4">
-			 <span class="badge badge-default"></img></span>
+				<iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=large&timezone=America%2FArgentina%2FSalta" width="100%" height="140" frameborder="0" seamless></iframe>
+			 
+
+		</div>
+		<div class="col-md-8">
+<!-- ContizacionDolar.com.ar Promedios Ancho Adaptable x 150px -->
+<iframe id="dolar" style="width: 98%; height: 150px; min-width: 150px; max-width: 728px; margin: 1%;" frameborder="0" scrolling="no" src="https://www.cotizacion-dolar.com.ar/recursos-webmaster/promedios/cotizacion-argentina-adaptable.php">
+</iframe>
+
+<script>
+
+
+setInterval(function (){
+document.getElementById('dolar').contentWindow.location.reload(true);
+}, 60*1000);
+</script>
+<!-- fin código Promedios Ancho Adaptable x 150px -->
 		</div>
 	</div>
 
