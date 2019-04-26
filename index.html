@@ -27,10 +27,13 @@
 		width:100%;
 		height:100%;
 	}
+	body {
+	  overflow-y:hidden;
+	}
 	</style>
 	
   </head>
-  <body>
+  <body style="background-color: #D7B91D">
 
 <a class="weatherwidget-io" href="https://forecast7.com/es/n34d60n58d38/buenos-aires/" data-label_1="BUENOS AIRES" data-label_2="WEATHER" >BUENOS AIRES WEATHER</a>
 <script>
@@ -42,30 +45,58 @@
 	
 	<div class="row">
 		<div class="col-md-4">
-		
-			<div class="row">
-				<div class="col-md-12">
-					<script type='text/javascript' src='https://darksky.net/widget/graph-bar/-34.6076,-58.4371/ca12/es.js?width=100%&height=400&title=Full Forecast&textColor=333333&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=ca&timeColor=333333&tempColor=333333&currentDetailsOption=false'></script>
-				</div>
-			</div>
+			<!--- --->
+			<div class="carousel slide" id="carousel-696151">
+						<ol class="carousel-indicators">
+							<li data-slide-to="0" data-target="#carousel-696151">
+							</li>
+							<li data-slide-to="1" data-target="#carousel-696151" class="active">
+							</li>
+							<li data-slide-to="2" data-target="#carousel-696151">
+							</li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<!-- TIEMPO Y DOLAR -->
+								<div class="col-md-12" style="background-color: #FFFFFF">
+									<div class="row">
+										<div class="col-md-12">
+											<script type='text/javascript' src='https://darksky.net/widget/graph-bar/-34.6076,-58.4371/ca12/es.js?width=100%&height=400&title=Full Forecast&textColor=333333&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=ca&timeColor=333333&tempColor=333333&currentDetailsOption=false'></script>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<!-- ContizacionDolar.com.ar Promedios Ancho Adaptable x 150px -->
+											<iframe id="dolar" style="width: 98%; height: 150px; min-width: 150px; max-width: 728px; margin: 1%;" frameborder="0" scrolling="no" src="https://www.cotizacion-dolar.com.ar/recursos-webmaster/promedios/cotizacion-argentina-adaptable.php">
+											</iframe>
 
-			<div class="row">
-				<div class="col-md-12">
-					<!-- ContizacionDolar.com.ar Promedios Ancho Adaptable x 150px -->
-					<iframe id="dolar" style="width: 98%; height: 150px; min-width: 150px; max-width: 728px; margin: 1%;" frameborder="0" scrolling="no" src="https://www.cotizacion-dolar.com.ar/recursos-webmaster/promedios/cotizacion-argentina-adaptable.php">
-					</iframe>
-
-					<script>
+											<script>
 
 
-					setInterval(function (){
-					document.getElementById('dolar').contentWindow.location.reload(true);
-					}, 60*1000);
-					</script>
-					<!-- fin código Promedios Ancho Adaptable x 150px -->
-				</div>
-			</div>
-
+											setInterval(function (){
+											document.getElementById('dolar').contentWindow.location.reload(true);
+											}, 60*1000);
+											</script>
+											<!-- fin código Promedios Ancho Adaptable x 150px -->
+										</div>
+									</div>
+								</div>
+								<!-- TIEMPO Y DOLAR -->
+							</div>
+							<div class="carousel-item">
+								<!-- TWITTER TRANSITO -->
+								<a class="twitter-timeline" data-height="500" data-chrome="nofooter noborders noscrollbar" data-tweet-limit="10" href="https://twitter.com/solotransito?ref_src=twsrc%5Etfw">Tweets by Solo Tránsito</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+								<!-- TWITTER TRANSITO -->
+							</div>
+							<div class="carousel-item">
+								<!-- TWITTER TRANSITO -->
+								<a class="twitter-timeline" data-height="500" data-chrome="nofooter noborders noscrollbar" data-tweet-limit="10" href="https://twitter.com/naagencia?ref_src=twsrc%5Etfw">Tweets by Agencia Noticias</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+								<!-- TWITTER TRANSITO -->
+							</div>
+						</div> <a class="carousel-control-prev" href="#carousel-696151" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-696151" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+					</div>
+			<!--- --->
+			
 		</div>
 		<div class="col-md-8">
 			<div class="video-container">
@@ -81,5 +112,12 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+	<script>
+		$(function(){
+		$('.carousel').carousel({
+		  interval: 30000
+		});
+		});
+	</script>
   </body>
 </html>
