@@ -48,6 +48,8 @@
 							</li>
 							<li data-slide-to="2" data-target="#carousel-696151">
 							</li>
+							<li data-slide-to="3" data-target="#carousel-696151">
+							</li>
 						</ol>
 						<div class="carousel-inner">
 							<div class="carousel-item active">
@@ -76,7 +78,7 @@
 									</div>
 									<div class="row">
 										<div class="col-md-12">
-											<script type='text/javascript' src='https://darksky.net/widget/small/42.360082,-71.05888/ca12/en.js?width=100%&height=200&title=buenos aires&textColor=333333&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=ca'></script>
+	
 										</div>
 									</div>
 								</div>
@@ -89,11 +91,6 @@
 							</div>
 							<div class="carousel-item">
 								<!-- TWITTER TRANSITO -->
-								<a class="twitter-timeline" data-chrome="nofooter noborders noscrollbar" href="https://twitter.com/naagencia?ref_src=twsrc%5Etfw">Tweets by Agencia Noticias</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-								<!-- TWITTER TRANSITO -->
-							</div>
-							<div class="carousel-item">
-								<!-- TWITTER TRANSITO -->
 								<a class="twitter-timeline" data-chrome="nofooter noborders noscrollbar" href="https://twitter.com/LANACION?ref_src=twsrc%5Etfw">Tweets fachitos</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 								<!-- TWITTER TRANSITO -->
 							</div>
@@ -101,6 +98,9 @@
 								<!-- TWITTER TRANSITO -->
 								<a class="twitter-timeline" data-chrome="nofooter noborders noscrollbar" href="https://twitter.com/infobae?ref_src=twsrc%5Etfw">Tweets by Infobae</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 								<!-- TWITTER TRANSITO -->
+							</div>
+							<div class="carousel-item">
+								<iframe width="400" height="600" src="https://embed.windy.com/embed2.html?lat=-37.788&lon=-58.667&zoom=5&level=surface&overlay=rain&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=true&detailLat=-34.588&detailLon=-58.674&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe>
 							</div>
 						</div> <a class="carousel-control-prev" href="#carousel-696151" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-696151" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
 					</div>
@@ -110,14 +110,18 @@
 		<div class="col-md-7">
 			<div class="row">
 				<div class="col-md-12">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
 					<div class="video-container">
 						<iframe src="https://www.youtube.com/embed/videoseries?list=PL8QupDolgeK1Jbz74XUBVFqarU6fRKUZ0&autoplay=1&loop=1&muted=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
 						</iframe>
 					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+				<script type='text/javascript' src='https://darksky.net/widget/small/42.360082,-71.05888/ca12/en.js?width=100%&height=200&title=buenos aires&textColor=333333&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=ca'></script>
+				</div>
+				<div class="col-md-8">
+					<iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:450px;height:210px;"src="https://www.clocklink.com/html5embed.php?clock=048&timezone=GMT-0300&color=orange&size=450&Title=&Message=&Target=&From=2019,1,1,0,0,0&Color=orange"></iframe>
 				</div>
 			</div>
 			
@@ -133,7 +137,7 @@
 	<script>
 		$(function(){
 		$('.carousel').carousel({
-		  interval: 10000
+		  interval: 20000
 		});
 		});
 	</script>
