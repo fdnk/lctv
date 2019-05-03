@@ -54,64 +54,17 @@
 							</li>
 						</ol>
 						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<!-- TIEMPO Y DOLAR -->
-								
-								<div class="col-md-12" style="background-color: #FFFFFF; height: 100%">
-									<div class="row">
-										<div class="col-md-12">
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-12">
-											<!-- ContizacionDolar.com.ar Promedios Ancho Adaptable x 150px -->
-											<iframe id="dolar" style="width: 98%; height: 150px; min-width: 150px; max-width: 728px; margin: 1%;" frameborder="0" scrolling="no" src="https://www.cotizacion-dolar.com.ar/recursos-webmaster/promedios/cotizacion-argentina-adaptable.php">
-											</iframe>
-											<!-- fin código Promedios Ancho Adaptable x 150px -->
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-12">
-											<!-- EXCHANGE RATE HISTORY GRAPHS START -->
-											<link rel="stylesheet" type="text/css" href="https://www.currencyexchange.org.uk/widget/CE-ERHG-css.php?id=1&w=350&h=220&bdrc=E0E0E0&mbg=FFFFFF&fc=7B7B7B&tc=333333" media="screen" />
-											<div id="ceerhg1">
-											  <div id="ceerhg1-widget"></div>
-											  <div id="ceerhg1-infolink">Source: <a rel="nofollow" href="https://www.currencyexchange.org.uk/" target="_new">CurrencyExchange.org.uk</a></div>
-											<script type="text/javascript">	
-											var dcf = 'USD';
-											var dct = 'ARS';
-											var t = 'Dolar - AR$';
-											var tc = '333333';
-											var stc = 'C0C0C0';
-											var time = '90';
-											var w = '350';
-											var h = '220';
-											var bdrc = 'E0E0E0';
-											var cbg = 'D6E7F2';
-											var mbg = 'FFFFFF';
-											var lc = '1A5488';
-											var fc = '7B7B7B';
-											var id = '1';
-											var tz = '-3';
-
-											var ccHost = (("https:" == document.location.protocol) ? "https://www." : "http://www.");
-											document.write(unescape("%3Cscript src='" + ccHost + "currencyexchange.org.uk/widget/CE-ERHG-1.php' type='text/javascript'%3E%3C/script%3E"));
-											</script>
-											</div>
-											<!-- EXCHANGE RATE HISTORY GRAPHS END -->
-										</div>
-									</div>
-									
-									<div class="row">
-										<!-- TWITTER TRANSITO -->
-										<a class="twitter-timeline" data-chrome="nofooter noborders noscrollbar" href="https://twitter.com/solotransito?ref_src=twsrc%5Etfw">Tweets by Solo Tránsito</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-										<!-- TWITTER TRANSITO -->
-									</div>			
+							<div class="carousel-item active">								
+								<div class="col-md-12" style="height: 100%">
+									<!-- dolar y transito -->
+									<iframe id="dolar" style="width: 100%; height: 750px; min-width: 150px; margin: 0%;" src="actualidad.html" frameborder="0" allow="autoplay; encrypted-media"></iframe>
 								</div>
-								<!-- TIEMPO Y DOLAR -->
 							</div>
 							<div class="carousel-item">
-								<iframe id="windy" width="98%" height="750" src="https://embed.windy.com/embed2.html?lat=-37.788&lon=-58.667&zoom=5&level=surface&overlay=rain&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=true&detailLat=-34.588&detailLon=-58.674&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe>
+								<div class="col-md-12" style="height: 100%">
+									<!-- windy -->
+									<iframe id="windy" style="width: 100%; height: 750px; min-width: 150px; margin: 0%;" src="windy.html" frameborder="0" allow="autoplay; encrypted-media"></iframe>									
+								</div>
 							</div>
 						</div> <a class="carousel-control-prev" href="#carousel-696151" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-696151" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
 					</div>
@@ -157,7 +110,7 @@
 		setInterval(function (){
 			document.getElementById('dolar').src += "";
 			document.getElementById('windy').src += "";
-		}, 5*60*1000);
+		},5*60*1000);
 	</script>
   </body>
 </html>
